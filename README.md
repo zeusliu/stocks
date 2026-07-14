@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# BluePulse · 股票小白站
 
-## Getting Started
+给投资小白看的 A 股学习站：每日涨跌、行业走势、原因解读、推荐留存与到期复盘。
 
-First, run the development server:
+> 内容仅供学习，不构成投资建议。
+
+## 本地预览
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+浏览器打开 [http://localhost:3000](http://localhost:3000)。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 数据怎么更新（本机抓取 → GitHub）
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. 安装 Python 依赖：
 
-## Learn More
+```bash
+pip install -r scripts/requirements.txt
+```
 
-To learn more about Next.js, take a look at the following resources:
+2. 抓取并（可选）复盘：
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+chmod +x scripts/update_data.sh
+./scripts/update_data.sh
+# 或指定日期
+./scripts/update_data.sh --date 2026-07-14
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. 提交数据并推送：
 
-## Deploy on Vercel
+```bash
+git add public/data
+git commit -m "chore: update market data"
+git push
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+网站静态读 `public/data/`，推送后 GitHub Pages 会显示最新数据。
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 部署到 GitHub Pages
+
+1. 把仓库推到 GitHub  
+2. Settings → Pages → Source 选 GitHub Actions  
+3. 本仓库已配置静态导出：`npm run build` 产出 `out/`  
+4. 若仓库名不是 `username.github.io`，在 `next.config.ts` 增加：
+
+```ts
+basePath: "/你的仓库名",
+assetPrefix: "/你的仓库名",
+```
+
+并设置：
+
+```bash
+NEXT_PUBLIC_BASE_PATH=/你的仓库名
+```
+
+## 目录说明
+
+| 路径 | 作用 |
+|------|------|
+| `src/app` | 页面 |
+| `public/data` | 日行情 / 周期 / 推荐 / 复盘 JSON |
+| `scripts/` | 本机抓取与复盘脚本 |
+
+当前 `public/data` 内是演示数据，方便先把网站跑通；接入 `akshare` 后可换成真实行情。

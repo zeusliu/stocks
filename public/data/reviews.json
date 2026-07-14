@@ -1,0 +1,50 @@
+{
+  "updatedAt": "2026-07-14",
+  "items": [
+    {
+      "id": "rev-20260714-001",
+      "recommendationId": "rec-20260708-001",
+      "recommendDate": "2026-07-08",
+      "reviewDate": "2026-07-14",
+      "code": "688981",
+      "name": "中芯国际",
+      "horizonDays": 5,
+      "expectedNote": "希望5日内相对大盘更强、完成修复。",
+      "expectedPct": 5,
+      "actualPct": 27.5,
+      "gapNote": "实际涨幅显著好于推荐时的保守预期。",
+      "gapReason": "半导体情绪快速回暖，叠加 2026-07-14 强势涨停，超出原先“修复行情”假设；属于主题加速，也意味着后续波动风险上升。",
+      "result": "beat"
+    },
+    {
+      "id": "rev-20260714-002",
+      "recommendationId": "rec-20260709-001",
+      "recommendDate": "2026-07-09",
+      "reviewDate": "2026-07-14",
+      "code": "300274",
+      "name": "阳光电源",
+      "horizonDays": 3,
+      "expectedNote": "3日内希望延续强于光伏板块。",
+      "expectedPct": 5,
+      "actualPct": 4.2,
+      "gapNote": "有正收益，但强度一般，基本符合中性预期。",
+      "gapReason": "出口预期支撑了价格，但板块整体并未全面爆发，资金更多流向半导体与机器人，导致弹性不如最热主线。",
+      "result": "met"
+    },
+    {
+      "id": "rev-20260714-003",
+      "recommendationId": "rec-20260710-001",
+      "recommendDate": "2026-07-10",
+      "reviewDate": "2026-07-14",
+      "code": "300024",
+      "name": "机器人",
+      "horizonDays": 3,
+      "expectedNote": "3日内重点观察回撤，主题能否延续。",
+      "expectedPct": 3,
+      "actualPct": -2.1,
+      "gapNote": "未达到“延续强势”的期望，出现回撤。",
+      "gapReason": "主题股常见路径：催化日强、随后分歧加大。资金在7月14日更多切换到半导体龙头，机器人短线兑现压力显现。对小白：主题票要提前准备“涨得快也可能跌得快”。",
+      "result": "miss"
+    }
+  ]
+}

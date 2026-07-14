@@ -1,0 +1,228 @@
+{
+  "updatedAt": "2026-07-14",
+  "asOf": "2026-07-14",
+  "todaySell": [
+    {
+      "id": "sell-20260714-001",
+      "code": "688981",
+      "name": "中芯国际",
+      "action": "sell",
+      "sector": "半导体",
+      "entryDate": "2026-07-08",
+      "suggestDate": "2026-07-14",
+      "horizonDays": 5,
+      "heldPct": 27.5,
+      "reason": "窗口内涨幅已远超原观察目标，短线兑现为主，避免把涨停当无限趋势。"
+    },
+    {
+      "id": "sell-20260714-002",
+      "code": "300024",
+      "name": "机器人",
+      "action": "sell",
+      "sector": "机器人",
+      "entryDate": "2026-07-10",
+      "suggestDate": "2026-07-14",
+      "horizonDays": 3,
+      "heldPct": -2.1,
+      "reason": "主题分歧加大、表现不及预期，到期按计划减仓，把仓位让给更强主线。"
+    }
+  ],
+  "plans": [
+    {
+      "horizonDays": 1,
+      "title": "未来 1 天",
+      "items": [
+        {
+          "id": "plan-1d-buy-001",
+          "action": "buy",
+          "code": "002230",
+          "name": "科大讯飞",
+          "sector": "人工智能",
+          "suggestDate": "2026-07-15",
+          "expectedPct": 2.5,
+          "thesis": "AI应用热度仍在，适合做短线强弱跟踪。",
+          "note": "仅观察是否延续板块强度，不追一字板。"
+        },
+        {
+          "id": "plan-1d-sell-001",
+          "action": "sell",
+          "code": "000858",
+          "name": "五粮液",
+          "sector": "白酒",
+          "suggestDate": "2026-07-15",
+          "expectedPct": -1.5,
+          "thesis": "消费资金换仓，短线偏弱。",
+          "note": "若仍持有防御仓位，可择弱减仓。"
+        },
+        {
+          "id": "plan-1d-hold-001",
+          "action": "hold",
+          "code": "300750",
+          "name": "宁德时代",
+          "sector": "新能源",
+          "suggestDate": "2026-07-15",
+          "expectedPct": 1.0,
+          "thesis": "龙头回暖尚未充分扩散到板块。",
+          "note": "先看量能与板块跟风，不急着加仓也不急出。"
+        }
+      ]
+    },
+    {
+      "horizonDays": 3,
+      "title": "未来 3 天",
+      "items": [
+        {
+          "id": "plan-3d-buy-001",
+          "action": "buy",
+          "code": "300750",
+          "name": "宁德时代",
+          "sector": "新能源",
+          "suggestDate": "2026-07-17",
+          "expectedPct": 4.0,
+          "thesis": "若新能源指数同步回暖，龙头带动弹性更高。",
+          "note": "分批观察：突破后强于指数再考虑加关注。"
+        },
+        {
+          "id": "plan-3d-buy-002",
+          "action": "buy",
+          "code": "603259",
+          "name": "药明康德",
+          "sector": "医药",
+          "suggestDate": "2026-07-17",
+          "expectedPct": 3.0,
+          "thesis": "震荡市中医药偏防御，回撤可控。",
+          "note": "适合学习“稳中有弹性”，不追求爆发。"
+        },
+        {
+          "id": "plan-3d-sell-001",
+          "action": "sell",
+          "code": "600519",
+          "name": "贵州茅台",
+          "sector": "白酒",
+          "suggestDate": "2026-07-17",
+          "expectedPct": -2.0,
+          "thesis": "白酒情绪转弱，资金更偏科技成长。",
+          "note": "若三天内无明显修复，继续降仓优先级。"
+        }
+      ]
+    },
+    {
+      "horizonDays": 7,
+      "title": "未来 7 天",
+      "items": [
+        {
+          "id": "plan-7d-buy-001",
+          "action": "buy",
+          "code": "688981",
+          "name": "中芯国际",
+          "sector": "半导体",
+          "suggestDate": "2026-07-21",
+          "expectedPct": 6.0,
+          "thesis": "半导体景气预期仍在，急涨后更适合等回撤再观察。",
+          "note": "7天视角：回调企稳后再纳入观察名单，不追高。"
+        },
+        {
+          "id": "plan-7d-buy-002",
+          "action": "buy",
+          "code": "300274",
+          "name": "阳光电源",
+          "sector": "新能源",
+          "suggestDate": "2026-07-21",
+          "expectedPct": 5.0,
+          "thesis": "逆变器出口预期仍有支撑，弹性次于最热主线但逻辑更稳。",
+          "note": "周内若再次弱于光伏板块可放后；强于板块再跟进。"
+        },
+        {
+          "id": "plan-7d-sell-001",
+          "action": "sell",
+          "code": "601398",
+          "name": "工商银行",
+          "sector": "银行",
+          "suggestDate": "2026-07-21",
+          "expectedPct": -1.0,
+          "thesis": "进攻行情下银行相对收益往往落后。",
+          "note": "作为闲置仓位可逐步腾出，转向观察科技主线。"
+        },
+        {
+          "id": "plan-7d-hold-001",
+          "action": "hold",
+          "code": "002230",
+          "name": "科大讯飞",
+          "sector": "人工智能",
+          "suggestDate": "2026-07-21",
+          "expectedPct": 3.5,
+          "thesis": "主题票波动大，周度更适合看趋势是否延续。",
+          "note": "先确认不是一日游，再决定加减仓节奏。"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "rec-20260708-001",
+      "date": "2026-07-08",
+      "horizonDays": 5,
+      "code": "688981",
+      "name": "中芯国际",
+      "thesis": "半导体景气预期仍在，回调后观察能否收复短期均线。",
+      "targetNote": "未来5个交易日希望相对大盘更强，不追涨停。",
+      "status": "reviewed",
+      "action": "buy"
+    },
+    {
+      "id": "rec-20260709-001",
+      "date": "2026-07-09",
+      "horizonDays": 3,
+      "code": "300274",
+      "name": "阳光电源",
+      "thesis": "光伏逆变器出口预期改善，关注量能是否持续。",
+      "targetNote": "未来3个交易日观察是否延续强于板块。",
+      "status": "reviewed",
+      "action": "buy"
+    },
+    {
+      "id": "rec-20260710-001",
+      "date": "2026-07-10",
+      "horizonDays": 3,
+      "code": "300024",
+      "name": "机器人",
+      "thesis": "人形机器人主题升温，适合作为主题观察样本。",
+      "targetNote": "未来3天重点看回撤控制，不把涨停当终点。",
+      "status": "reviewed",
+      "action": "buy"
+    },
+    {
+      "id": "rec-20260711-001",
+      "date": "2026-07-11",
+      "horizonDays": 5,
+      "code": "603259",
+      "name": "药明康德",
+      "thesis": "震荡市中医药偏防御，适合学习“稳中有弹性”。",
+      "targetNote": "未来5天关注能否稳住并强于白酒消费。",
+      "status": "watching",
+      "action": "buy"
+    },
+    {
+      "id": "rec-20260714-001",
+      "date": "2026-07-14",
+      "horizonDays": 3,
+      "code": "002230",
+      "name": "科大讯飞",
+      "thesis": "AI应用催化仍在，观察热度能否从一日游变成连板/趋势。",
+      "targetNote": "未来3个交易日对比AI板块平均表现。",
+      "status": "watching",
+      "action": "buy"
+    },
+    {
+      "id": "rec-20260714-002",
+      "date": "2026-07-14",
+      "horizonDays": 7,
+      "code": "300750",
+      "name": "宁德时代",
+      "thesis": "新能源龙头修复中，学习“龙头回暖是否带动板块”。",
+      "targetNote": "未来7天看是否持续强于新能源指数。",
+      "status": "watching",
+      "action": "buy"
+    }
+  ]
+}

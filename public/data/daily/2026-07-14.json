@@ -1,0 +1,265 @@
+{
+  "date": "2026-07-14",
+  "source": "eastmoney",
+  "verifiedAt": "2026-07-15T00:50:18",
+  "verify": {
+    "ok": false,
+    "reason": "HTTPSConnectionPool(host='push2ex.eastmoney.com', port=443): Max retries exceeded with url: /getTopicZTPool?ut=7eea3edcaed734bea9cbfc24409ed989&dpt=wz.ztzt&Pageindex=0&pagesize=10000&sort=fbt%3Aasc&date=20260715 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028)')))"
+  },
+  "summary": {
+    "indexName": "上证指数",
+    "indexClose": 3967.13,
+    "indexPct": 1.36,
+    "limitUp": 81,
+    "limitDown": 22,
+    "upCount": 0,
+    "downCount": 0,
+    "sentiment": "活跃",
+    "oneLiner": "上证 3967.13（+1.36%），涨停 81 家，跌停 22 家。"
+  },
+  "limitUp": [
+    {
+      "code": "000008",
+      "name": "神州高铁",
+      "pct": 10.17,
+      "price": 2.6,
+      "reason": "轨交设备"
+    },
+    {
+      "code": "002243",
+      "name": "力合科创",
+      "pct": 9.95,
+      "price": 6.85,
+      "reason": "化妆品"
+    },
+    {
+      "code": "603580",
+      "name": "艾艾精工",
+      "pct": 10.01,
+      "price": 33.75,
+      "reason": "塑料"
+    },
+    {
+      "code": "600354",
+      "name": "敦煌种业",
+      "pct": 9.96,
+      "price": 5.41,
+      "reason": "种植业"
+    },
+    {
+      "code": "600746",
+      "name": "江苏索普",
+      "pct": 9.96,
+      "price": 5.74,
+      "reason": "化学原料"
+    },
+    {
+      "code": "600844",
+      "name": "金煤科技",
+      "pct": 10.2,
+      "price": 2.7,
+      "reason": "化学原料"
+    },
+    {
+      "code": "605028",
+      "name": "世茂能源",
+      "pct": 9.99,
+      "price": 22.03,
+      "reason": "电力"
+    },
+    {
+      "code": "603042",
+      "name": "华脉科技",
+      "pct": 10.01,
+      "price": 12.31,
+      "reason": "通信设备"
+    },
+    {
+      "code": "603516",
+      "name": "淳中科技",
+      "pct": 10.0,
+      "price": 109.04,
+      "reason": "计算机设"
+    },
+    {
+      "code": "603489",
+      "name": "八方股份",
+      "pct": 9.98,
+      "price": 26.44,
+      "reason": "电机Ⅱ"
+    },
+    {
+      "code": "605255",
+      "name": "天普股份",
+      "pct": 10.01,
+      "price": 79.26,
+      "reason": "汽车零部"
+    },
+    {
+      "code": "000554",
+      "name": "泰山石油",
+      "pct": 10.09,
+      "price": 6.44,
+      "reason": "炼化及贸"
+    },
+    {
+      "code": "000759",
+      "name": "中百集团",
+      "pct": 9.93,
+      "price": 6.75,
+      "reason": "一般零售"
+    },
+    {
+      "code": "001388",
+      "name": "信通电子",
+      "pct": 10.0,
+      "price": 32.44,
+      "reason": "电网设备"
+    },
+    {
+      "code": "603197",
+      "name": "保隆科技",
+      "pct": 9.99,
+      "price": 29.62,
+      "reason": "汽车零部"
+    }
+  ],
+  "limitDown": [
+    {
+      "code": "600992",
+      "name": "贵绳股份",
+      "pct": -9.98,
+      "price": 10.55,
+      "reason": "通用设备"
+    },
+    {
+      "code": "603339",
+      "name": "四方科技",
+      "pct": -10.01,
+      "price": 14.38,
+      "reason": "通用设备"
+    },
+    {
+      "code": "600470",
+      "name": "六国化工",
+      "pct": -10.06,
+      "price": 5.63,
+      "reason": "农化制品"
+    },
+    {
+      "code": "600058",
+      "name": "五矿发展",
+      "pct": -9.96,
+      "price": 9.22,
+      "reason": "贸易Ⅱ"
+    },
+    {
+      "code": "002549",
+      "name": "凯美特气",
+      "pct": -10.01,
+      "price": 16.09,
+      "reason": "化学制品"
+    },
+    {
+      "code": "001229",
+      "name": "魅视科技",
+      "pct": -9.99,
+      "price": 42.07,
+      "reason": "计算机设"
+    },
+    {
+      "code": "603928",
+      "name": "兴业股份",
+      "pct": -9.99,
+      "price": 15.23,
+      "reason": "塑料"
+    },
+    {
+      "code": "605598",
+      "name": "上海港湾",
+      "pct": -10.01,
+      "price": 30.29,
+      "reason": "专业工程"
+    },
+    {
+      "code": "600785",
+      "name": "新华百货",
+      "pct": -10.05,
+      "price": 7.7,
+      "reason": "一般零售"
+    },
+    {
+      "code": "002457",
+      "name": "青龙管业",
+      "pct": -10.01,
+      "price": 12.76,
+      "reason": "装修建材"
+    }
+  ],
+  "topGainers": [
+    {
+      "code": "000008",
+      "name": "神州高铁",
+      "pct": 10.17,
+      "price": 2.6
+    },
+    {
+      "code": "002243",
+      "name": "力合科创",
+      "pct": 9.95,
+      "price": 6.85
+    },
+    {
+      "code": "603580",
+      "name": "艾艾精工",
+      "pct": 10.01,
+      "price": 33.75
+    },
+    {
+      "code": "600354",
+      "name": "敦煌种业",
+      "pct": 9.96,
+      "price": 5.41
+    },
+    {
+      "code": "600746",
+      "name": "江苏索普",
+      "pct": 9.96,
+      "price": 5.74
+    }
+  ],
+  "topLosers": [
+    {
+      "code": "600992",
+      "name": "贵绳股份",
+      "pct": -9.98,
+      "price": 10.55
+    },
+    {
+      "code": "603339",
+      "name": "四方科技",
+      "pct": -10.01,
+      "price": 14.38
+    },
+    {
+      "code": "600470",
+      "name": "六国化工",
+      "pct": -10.06,
+      "price": 5.63
+    },
+    {
+      "code": "600058",
+      "name": "五矿发展",
+      "pct": -9.96,
+      "price": 9.22
+    },
+    {
+      "code": "002549",
+      "name": "凯美特气",
+      "pct": -10.01,
+      "price": 16.09
+    }
+  ],
+  "sectors": [],
+  "interpretation": "2026-07-14 涨停/跌停来自东方财富涨停池；上证收盘来自历史行情。已与 akshare 涨停名单做样本对照（重叠率曾达 100%）。"
+}
