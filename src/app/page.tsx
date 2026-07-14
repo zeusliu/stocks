@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { Disclaimer, PageHeader, SectionTitle } from "@/components/SiteChrome";
+import { Disclaimer, SectionTitle } from "@/components/SiteChrome";
 import { StockTable, Pct } from "@/components/StockTable";
 import { formatPct } from "@/lib/data";
 import {
@@ -38,12 +38,20 @@ export default async function HomePage() {
   const plan7 = recommendations.plans.find((p) => p.horizonDays === 7);
 
   return (
-    <div className="space-y-6">
-      <PageHeader
-        kicker={`最新交易日 ${daily.date}`}
-        title="行情总览"
-        description={daily.summary.oneLiner}
-      />
+    <div className="space-y-8">
+      <section className="hero-surface">
+        <p className="page-kicker">最新交易日 {daily.date}</p>
+        <h1 className="page-title">看懂今日行情</h1>
+        <p className="page-desc">{daily.summary.oneLiner}</p>
+        <div className="hero-actions">
+          <Link href="/daily/" className="btn-primary">
+            打开每日行情
+          </Link>
+          <Link href="/recommend/" className="btn-ghost">
+            查看买卖建议
+          </Link>
+        </div>
+      </section>
 
       <section className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
         <Metric
@@ -52,7 +60,7 @@ export default async function HomePage() {
           value={
             <span className="font-num">
               {daily.summary.indexClose.toFixed(2)}{" "}
-              <span className="text-base font-medium">
+              <span className="text-lg font-medium">
                 <Pct value={daily.summary.indexPct} />
               </span>
             </span>
@@ -64,33 +72,33 @@ export default async function HomePage() {
         <Metric label="观察 / 复盘" value={`${watching.length} / ${reviews.items.length}`} />
       </section>
 
-      <section className="grid gap-4 xl:grid-cols-5">
-        <div className="panel p-4 md:p-5 xl:col-span-3">
+      <section className="grid gap-5 xl:grid-cols-5">
+        <div className="panel p-5 md:p-6 xl:col-span-3">
           <div className="panel-header">
             <SectionTitle title={`涨停 · ${daily.date}`} subtitle="当日涨停池样本" />
             <Link href="/daily/" className="table-link">
-              按日查看
+              按日查看 →
             </Link>
           </div>
           <StockTable rows={daily.limitUp} showReason asOfDate={daily.date} />
         </div>
 
-        <div className="panel p-4 md:p-5 xl:col-span-2">
+        <div className="panel p-5 md:p-6 xl:col-span-2">
           <div className="panel-header">
             <SectionTitle title="行业" subtitle={daily.date} />
             <Link href="/industry/" className="table-link">
-              全部
+              全部 →
             </Link>
           </div>
           <SectorCompact sectors={daily.sectors.slice(0, 6)} />
         </div>
       </section>
 
-      <section className="panel p-4 md:p-5">
+      <section className="panel p-5 md:p-6">
         <div className="panel-header">
           <SectionTitle title="周期强弱" subtitle={`截至 ${periods.asOf}`} />
           <Link href="/periods/" className="table-link">
-            7 / 14 天
+            7 / 14 天 →
           </Link>
         </div>
         <div className="grid gap-6 lg:grid-cols-2">
@@ -99,47 +107,47 @@ export default async function HomePage() {
         </div>
       </section>
 
-      <section className="space-y-4">
+      <section className="space-y-5">
         <div className="panel-header">
           <SectionTitle
             title="买卖建议"
             subtitle={`${recommendations.asOf} · 可抛 ${recommendations.todaySell.length} · 含 1/3/7 天计划`}
           />
           <Link href="/recommend/" className="table-link">
-            完整建议
+            完整建议 →
           </Link>
         </div>
 
-        <div className="panel p-4 md:p-5">
-          <h3 className="mb-3 text-sm font-medium text-up">今日可抛</h3>
+        <div className="panel p-5 md:p-6">
+          <h3 className="mb-4 text-sm font-medium text-up">今日可抛</h3>
           <HomeSellTable rows={recommendations.todaySell} />
         </div>
 
-        <div className="grid gap-4 lg:grid-cols-3">
+        <div className="grid gap-5 lg:grid-cols-3">
           {[
             { title: "未来 1 天", rows: plan1?.items ?? [] },
             { title: "未来 3 天", rows: plan3?.items ?? [] },
             { title: "未来 7 天", rows: plan7?.items ?? [] },
           ].map((block) => (
-            <div key={block.title} className="panel p-4 md:p-5">
-              <h3 className="mb-3 text-sm font-medium">{block.title}</h3>
+            <div key={block.title} className="panel p-5 md:p-6">
+              <h3 className="mb-4 text-sm font-medium">{block.title}</h3>
               <HomePlanTable rows={block.rows.slice(0, 4)} />
             </div>
           ))}
         </div>
 
-        <div className="grid gap-4 lg:grid-cols-2">
-          <div className="panel p-4 md:p-5">
+        <div className="grid gap-5 lg:grid-cols-2">
+          <div className="panel p-5 md:p-6">
             <div className="panel-header">
               <SectionTitle title="观察中" subtitle={`${watching.length} 条`} />
             </div>
             <HomeRecTable rows={watching.slice(0, 5)} />
           </div>
-          <div className="panel p-4 md:p-5">
+          <div className="panel p-5 md:p-6">
             <div className="panel-header">
               <SectionTitle title="复盘" subtitle={`${reviewedCount} 条已复盘`} />
               <Link href="/review/" className="table-link">
-                全部复盘
+                全部复盘 →
               </Link>
             </div>
             <HomeReviewTable rows={reviews.items.slice(0, 5)} />
@@ -163,8 +171,8 @@ function Metric({
 }) {
   return (
     <div className={`metric-tile ${className}`}>
-      <p className="text-xs text-muted">{label}</p>
-      <div className="mt-2 text-xl font-semibold tracking-tight">{value}</div>
+      <p className="text-xs tracking-wide text-muted">{label}</p>
+      <div className="mt-3 text-2xl font-semibold tracking-tight">{value}</div>
     </div>
   );
 }
